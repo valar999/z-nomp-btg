@@ -1,8 +1,8 @@
 FROM node
 
 RUN apt-get update && apt-get install -y libsodium-dev
-RUN git clone https://github.com/z-classic/z-nomp
-WORKDIR /z-nomp
+RUN git clone https://github.com/poolgold/z-nomp-bitcoin-gold
+WORKDIR /z-nomp-bitcoin-gold
 RUN npm install n -g
 RUN n stable
 RUN npm update
